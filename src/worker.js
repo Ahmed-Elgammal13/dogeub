@@ -10,4 +10,4 @@ bucket = "./dist"
 
 [[kv_namespaces]]
 binding = "__STATIC_CONTENT"
-id = "your-kv-namespace-id"  # You'll need to create this
+id = "your-kv-namespace-id"
