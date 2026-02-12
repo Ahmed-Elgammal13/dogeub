@@ -1,6 +1,16 @@
 {
+  "name": "v5-react-2",
+  "private": true,
+  "version": "5.0.42",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
   "dependencies": {
-    "itty-router": "^5.0.0",
+    "itty-router": "^5.0.22",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@fastify/compress": "^8.3.1",
@@ -14,7 +24,7 @@
     "@mercuryworkshop/scramjet": "https://github.com/MercuryWorkshop/scramjet/releases/download/latest/mercuryworkshop-scramjet-2.0.0-alpha.tgz",
     "@mercuryworkshop/wisp-js": "^0.3.3",
     "@mui/material": "^7.3.8",
-    "@titaniumnetwork-dev/ultraviolet": "^3.2.7",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
     "@tomphttp/bare-server-node": "^2.0.6",
     "basecoat-css": "^0.3.11",
     "clsx": "^2.1.1",
@@ -33,5 +43,23 @@
     "react-router-dom": "^7.13.0",
     "vite-plugin-static-copy": "^3.2.0",
     "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@fastify/cors": "^11.2.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwind-scrollbar": "^4.0.2",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-plugin-bundle-obfuscator": "^1.10.0"
   }
 }
