@@ -1,7 +1,14 @@
+import { getAssetFromKV } from '@cloudflare/kv-asset-handler';
+
 export default {
   async fetch(request, env, ctx) {
-    // Static assets are served automatically by Cloudflare
-    // You only need this if you want to add custom logic
-    return env.ASSETS.fetch(request);
+    try {
+      return await getAssetFromKV({
+        request,
+        waitUntil: ctx.waitUntil.bind(ctx),
+      });
+    } catch (e) {
+      return new Response('Not Found', { status: 404 });
+    }
   },
 };
